@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>Registrationn form</title>
+<link rel="stylesheet"href="form.css">
+    </head>
+    
+<style>
+.content {
+  max-width: 800px;
+  margin: auto;
+  
+}
+    input{
+        margin: 5px 0;
+    
+    }
+ table{
+       
+       margin-left:100px;
+       column-width: 30;
+    }
+    
+   
+ 
+label {
+
+     display: inline-block; width: 100px; 
+    
+}
+   
+  
+body {
+  
+  color: white;
+}
+
+h2 {
+  color: #8e40ed;
+    text-decoration-line: underline;}
+</style>
+<body>
+    <center>
+    <img src="saylani-logo.jpg">
+    <h2>Student Registration Form</h2></center>
+  <div class="content" style="background-color:#8e40ed">
+    <form>
+     <fieldset>
+
+        
+            <label for="first name">FIRSTNAME &nbsp;</label>
+            <input  required type="text"  placeholder="Enter first name" max="30"> <br>
+            
+        <label for="Last name">LAST NAME &nbsp;</label>
+                <input required type="text" placeholder="Enter last name" max="30"><br>
+        
+        <label for="dob">DATE OF BIRTH</label>
+             <input type=date value="date"><br>
+        
+        <label for="email">EMAIL ID</label>
+            <input type="email" name="email"><br>
+        
+        <label for=" mobileNo">MOBILE NUMBER</label>
+            <input type="number" name="number"><br>
+        <section >
+        <label  for="gender">GENDER</label>&nbsp;
+             <label class="other" for="male">Male</label>
+           <input type="radio" id="" name="gender" value="MALE">&nbsp;
+              <label class="other" for="female">Female</label>
+            <input type="radio" id="" name="gender" value="FEMALE"><br>
+        </section>
+        <label for="Address">ADDRESS</label>&nbsp;
+            <textarea name="comment">enter address</textarea><br>
+        
+        
+        
+        <label for="city">CITY &nbsp;</label>
+            <input required type="text"  max="30"><br>
+        
+        <label for="pincode">PIN CODE&nbsp;</label>
+            <input required type="number"><br>
+        
+        <label for="state">STATE &nbsp;</label>
+            <input required type="text"><br>
+        
+        
+        <label for="country">COUNTRY &nbsp;</label>
+            <input required type="text"><br>
+            <section>
+        <label for="hobbies">HOBBIES</label>
+            <label for="Drawing">Drawing</label>
+           <input type="checkbox" id="" name="hobbies" value="drawing">&nbsp;
+              <label for="singing">Singing</label>
+           <input type="checkbox" id="" name="hobbies" value="singing">
+            <label for="dancing">Dancing</label>
+           <input type="checkbox" id="" name="hobbies" value="dancing">&nbsp;
+              <label for="sketching">Sketching</label>
+           <input type="checkbox"  name="hobbies" value="sketching">
+             <label for="other">Other</label>
+           <input type="checkbox"  name="hobbies" value="other">
+            </section>
+       
+            <label>Qualification</label>  &nbsp;
+    <section> 
+     
+         <table><thead>
+                <tr>
+                    <th>S.I No </th>
+                    <th> examination</th><th>percentage  </th>
+           
+                 <th> Year</th></tr></thead>
+             <tbody>
+          
+                 <tr><td>1 class X</td><td> <input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>  
+                
+                 <tr><td>2 Class XII</td><td> <input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>  
+            
+                 <tr><td>3 Graduation</td><td> <input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>  
+            
+                 <tr><td>4 Class Master</td><td> <input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>  </tbody>
+             </table>
+         
+               
+         </section><section>
+        <label for="courses">Courses</label>&nbsp;
+        <label for="bca">BCA</label>
+           <input type="radio" id="" name="courses" value="BCA">&nbsp;
+        <label for="bcom">BCOM</label>
+            <input type="radio" id="" name="COURSES" value="BCOM">&nbsp;
+        <label for="bsc">BSC</label>
+            <input type="radio" id="" name="COURSES" value="Bsc">&nbsp;
+        <label for="ba">BA</label>
+            <input type="radio" id="" name="COURSES" value="Ba">
+            </section>
+ 
+      
+<br><center>
+        <a href="submit.html">
+        <input type= "submit" value="submit"></a>&nbsp;
+        <a href="formassignment.html"> <input type= "button" value="reset"></a>
+           </center>
+         
+            </fieldset>   
+    </form>
+     </div>
+   
+    </body>
+</html>
