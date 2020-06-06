@@ -1,0 +1,101 @@
+<html>
+<head>
+<title> Housing scheme </title>
+<link type="text/css" href="style.css" rel="stylesheet"/> 
+<link type="text/css" href="video.css" rel="stylesheet"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</head>
+
+<body>
+<base href="imagefile/">
+<div class="bgimage">
+    <div class="menu">
+      <div class="leftmenu">
+        <h1> PAK Housing Scheme</h1>
+      </div>
+        <div class="rightmenu">
+        <ul>
+        <li id="firstlist"><a class="menustyle" href="index.html"> Home</a> </li>
+        <li> <a class="menustyle" href="projct.html" >    Project </a> </li>
+        <li> <a class="menustyle" href="contact.html"> Contact </a></li>
+        <li> <a  class="menustyle" href="about.html">    About   </a></li>
+        </ul>
+      </div>
+    </div>
+   
+    <div class="button">
+    <h3> SEARCH.SEE.LOVE. </h3>
+    <h1> YOUR DREAM HOME AWAIT </h1>
+    <button id="buttontwo"> <a href="plot.html" style="text-decoration:none;color:white;" > PLOATS </a> </button>
+    <button id="buttontwo"> <a href="building.html" style="color:white; text-decoration:none; background-color:transparent;" > BUILDING </a> </button>
+    </div>
+
+</div>  
+<div class="bgimage2">
+    
+    <video autoplay muted loop id="myVideo">
+  <source src="D:\housing scheme\Al Rehman City, Karachi, Pakistan.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+</div>
+    <div  style="width:500px; height:40%; margin-top: -450px;margin-left: 50px;">
+
+<div  style="max-width:500px; ">
+  <img class="mySlides w3-animate-top" src="imagefile/house1.jpg" style="width:100%" alt="no image found">
+  <img class="mySlides w3-animate-bottom" src="plotimage/gwader.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="imagefile/hh.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="plotimage/p2.jpg" style="width:100%">
+</div>
+
+</div>
+<div style="height:100px;width:100px; border:2px;">
+      <img src="plotimage/Al_Hameed_Associates.jpg" style="width:100%">
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

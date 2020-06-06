@@ -1,0 +1,56 @@
+*{
+   margin:0px;
+   padding:0px;
+    }
+    
+    .bgimage
+    {
+    background-image: url('way.jpg');
+    background-size: 100% 100%;
+    width:100%;
+    height:100vh;
+    }
+
+    .menu
+    {
+      background-color:rgba(0,0,0,0.5);
+      height:100px;width:100%;
+    }
+    
+    .leftmenu
+    {
+      width:25%;
+      line-height:100px;
+      float:left;
+    }
+    .leftmenu h1{
+      padding-left:70px;
+      font-weight:bold;
+      color:white;
+      font-size:25px;
+    }
+    .rightmenu{
+      width:75%;
+      height:100px;
+      float:right;
+   }
+   .rightmenu ul{
+   margin-left: 300px;
+   }
+   .rightmenu ul li{
+      display:inline-block;
+      list-style:none;
+      font-size:15px;
+      font-weight: bold;
+      line-height: 100px;
+      margin-left: 40px;
+      text-transform: uppercase;
+      color: white;
+   }
+   
+  
+   
+   
+   .rightmenu ul li:hover{
+   color: orange;
+   }
